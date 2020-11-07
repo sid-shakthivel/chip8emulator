@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chip 8 Emulator</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=VT323"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="opcodeContainer">
+        <h1>Memory</h1>
+        <div class="opcodeList">
+        </div>
+      </div>
+
+      <div class="romContainer">
+        <h1>Chip 8 Emulator</h1>
+        <canvas></canvas>
+        <div class="romControl">
+          <label for="romSelect">ROM: </label>
+          <select name="romSelect" id="romSelect">
+            <option value="BLINKY">BLINKY</option>
+            <option value="BLITZ">BLITZ</option>
+            <option value="PONG">PONG</option>
+          </select>
+          <button type="button" id="start">Start</button>
+          <button type="button" id="stop">Stop</button>
+        </div>
+      </div>
+
+      <div>
+        <h1>Registers</h1>
+        <div class="registerContainer">
+          <div class="registerList">
+            <p id="PC">PC:</p>
+            <p id="I">I:</p>
+            <p id="R0">R0:</p>
+            <p id="R1">R1:</p>
+            <p id="R2">R2:</p>
+            <p id="R3">R3:</p>
+            <p id="R4">R4:</p>
+            <p id="R5">R5:</p>
+            <p id="R6">R6:</p>
+            <p id="R7">R7:</p>
+            <p id="R8">R8:</p>
+            <p id="R9">R9:</p>
+            <p id="R10">R10:</p>
+            <p id="R11">R11:</p>
+            <p id="R12">R12:</p>
+            <p id="R13">R13:</p>
+            <p id="R14">R14:</p>
+            <p id="R15">R15:</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./scripts/information.js"></script>
+    <script type="module" src="./scripts/chip8.js"></script>
+    <script type="module" src="./scripts/romLoader.js"></script>
+  </body>
+</html>

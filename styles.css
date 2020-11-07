@@ -1,0 +1,96 @@
+canvas {
+  border: 2px solid #33ff66;
+  height: 644px;
+}
+
+select {
+  font-size: 25px;
+  background-color: #000000;
+  color: #33ff66;
+  font-family: "VT323", monospace;
+  border: 1px solid #33ff66;
+}
+
+button {
+  font-size: 25px;
+  background-color: #000000;
+  color: #33ff66;
+  font-family: "VT323", monospace;
+  border: 1px solid #33ff66;
+}
+
+.romContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.romControl {
+  font-size: 40px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-column-gap: 10px;
+  color: #33ff66;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+html,
+body,
+.container {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: "VT323", monospace;
+}
+
+.opcodeList {
+  overflow: auto;
+  font-size: 30px;
+  width: 300px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+}
+
+.registerList {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+p {
+  margin: 2px !important;
+}
+
+.special {
+  color: #000000;
+  background-color: #33ff66;
+}
+
+@media (max-width: 1500.98px) {
+  canvas {
+    height: 322px;
+  }
+
+  .opcodeList {
+    height: 350px;
+  }
+
+  .romContainer {
+    display: block !important;
+  }
+
+  .registerList {
+    font-size: 25px;
+  }
+}
